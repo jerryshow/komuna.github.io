@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>KOMUNA</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
- </head>
+</head>
 <body>
+  <div class="background blue-purple"></div>
+  <div class="background green-blue"></div>
+  <div class="background sweet-morning"></div>
   <div class="wrapper">
     <div class="content">
       <form>
-        <div class="m-name">
-          <span>Member 1 ( <span>56%</span> )</span>
-          <input type="number" class="salary s1">
+        <div class="m-name m-caption">
+          <span class="m-caption-text">Members</span>
+          <span class="m-caption-icon" id="m-caption-icon"></span>
         </div>
-        <div class="m-name">
-          <span>Member 2 ( <span>34%</span> )</span>
-          <input type="number" class="salary s2">
-        </div>
-        <div class="m-name">
-          <span>Member 3 ( <span>12%</span> )</span>
-          <input type="number" class="salary s3">
+        <div class="m-name-body" id="m-name-body">
+          <div class="m-name">
+            <input type="number" placeholder="Member 1" class="salary s1">
+            <!-- <span>Member 1 ( <span>56%</span> )</span> -->
+          </div>
+          <div class="m-name">
+            <input type="number" placeholder="Member 2" class="salary s2"> 
+            <!-- <span>Member 2 ( <span>34%</span> )</span> -->
+          </div>
+          <div class="m-name">
+            <input type="number" placeholder="Member 3" class="salary s3">
+            <!-- <span>Member 3 ( <span>12%</span> )</span> -->
+          </div>
+          <span class="m-name-hide-w" id="m-name-hide-w">
+            <span class="m-name-hide"></span>
+          </span>
         </div>
       </form>        
       <div class="members">
         <div class="member">
           <div class="i-wrapper">
-            <label for="electricity">electricity</label>
-            <input id="electricity" type="number" class="iii t-i">
+            <input id="electricity" type="number" placeholder="electricity" class="iii t-i">
+            <!-- <label for="electricity">electricity</label> -->
           </div>
           <div class="e-payment js-select">0</div>
           <div class="w-payment js-select">0</div>
@@ -35,8 +47,8 @@
         </div>
         <div class="member">
           <div class="i-wrapper">
-            <label for="water">water</label>
-            <input id="water" type="number" class="iii m-i">
+            <input id="water" type="number" placeholder="water" class="iii m-i">
+            <!-- <label for="water">water</label> -->
           </div>
           <div class="e-payment js-select">0</div>
           <div class="w-payment js-select">0</div>
@@ -44,8 +56,8 @@
         </div>
         <div class="member">
           <div class="i-wrapper">
-            <label for="gas">gas</label>
-            <input id="gas" type="number" class="iii b-i">
+            <input id="gas" type="number" placeholder="gas" class="iii b-i">
+            <!-- <label for="gas">gas</label> -->
           </div>
           <div class="e-payment js-select">0</div>
           <div class="w-payment js-select">0</div>
@@ -55,12 +67,14 @@
       <div class="summary">
         <div class="total-caption">
           <p>total</p>
-          <button class="result">result</button>
         </div>
         <div class="total">0</div>
         <div class="total">0</div>
         <div class="total">0</div>
       </div>
+      <div class="result-w">
+        <button class="result ripplelink cyan">RESULT</button>
+      </div>    
     </div>
   </div>
   <script src="main.js"></script>      

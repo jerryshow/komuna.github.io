@@ -116,3 +116,59 @@ document.querySelector(".result").onclick = function() {
 };
 
 
+/* UI JS */
+// let x = document.getElementsByClassName("m-caption-icon");
+// let m = document.getElementsByClassName("m-name-body");
+
+let x = document.getElementById("m-caption-icon");
+let y = document.getElementById("m-name-hide-w");
+let m = document.getElementById("m-name-body");
+x.addEventListener('click', function (event) {
+	m.classList.toggle("m-open");
+});
+
+y.addEventListener('click', function (event) {
+	m.classList.toggle("m-open");
+});
+
+// document.getElementById("toggle").onclick = function() {
+// 	    toggle();
+// }
+
+
+// x.addEventListener('click', function (event) {
+//       if (m.style.display == "") {
+//           m.style.display = "none";
+//       } else {
+//           m.style.display = "";
+//       }
+//     }
+//   );
+
+   // element.classList.toggle("mystyle");
+
+
+   /* material click */
+
+   var links = document.querySelectorAll('.ripplelink');
+
+for (var i = 0, len = links.length; i < len; i++) {
+  links[i].addEventListener('click', function(e) {
+    var targetEl = e.target;
+    var inkEl = targetEl.querySelector('.ink');
+
+    if (inkEl) {
+      inkEl.classList.remove('animate');
+    }
+    else {
+      inkEl = document.createElement('span');
+      inkEl.classList.add('ink');
+      inkEl.style.width = inkEl.style.height = Math.max(targetEl.offsetWidth, targetEl.offsetHeight) + 'px';
+      targetEl.appendChild(inkEl);
+    }
+
+    inkEl.style.left = (e.offsetX - inkEl.offsetWidth / 2) + 'px';
+    inkEl.style.top = (e.offsetY - inkEl.offsetHeight / 2) + 'px';
+    inkEl.classList.add('animate');
+  }, false);
+}
