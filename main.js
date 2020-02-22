@@ -111,7 +111,7 @@ function evgArraySummFunc(evgArray){
 document.querySelector(".result").onclick = function() {
 	var evgArraySummFuncArray = [ evgArraySummFunc(ePaymentArray),	evgArraySummFunc(wPaymentArray), evgArraySummFunc(gPaymentArray) ];
 	for(zz = 0; zz < 3; zz++ ){
-		totalInputArray[zz].innerHTML = evgArraySummFuncArray[zz].toFixed(2);
+		totalInputArray[zz].innerHTML = evgArraySummFuncArray[zz].toFixed(1);
 	}
 };
 
