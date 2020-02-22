@@ -64,8 +64,8 @@ function inneringHTML (toPay, toPayInput, SalaryUpdateCallback){
 	var siblings = getSiblings(toPayInputParent);
 	var mustPayAmountArray = topayFunc(toPay);
 	for(i=0; i<siblings.length; i++){
-		siblings[i].innerHTML = mustPayAmountArray[i].toFixed(2);
-		totalArrayData[i] = mustPayAmountArray[i].toFixed(2);
+		siblings[i].innerHTML = mustPayAmountArray[i].toFixed(1);
+		totalArrayData[i] = mustPayAmountArray[i].toFixed(1);
 	}
 
 	return totalArrayData;
