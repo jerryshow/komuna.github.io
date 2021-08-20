@@ -1,2 +1,2 @@
 # komuna.github.io
-https://tsyaroslav.github.io/komuna1/
+https://tsyaroslav.github.io/komuna/
